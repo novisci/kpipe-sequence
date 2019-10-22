@@ -1,4 +1,4 @@
 module.exports = {
-  PromiseChain: require('../sequence/pchain'),
-  PipelinePromise: require('../sequence/ppipe')
+  PromiseChain: require('./pchain'),
+  PipelinePromise: require('./ppipe')
 }
