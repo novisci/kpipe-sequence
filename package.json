@@ -1,13 +1,13 @@
 {
   "name": "kpipe-sequence",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Promise sequences and pipelines for kpipe",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "author": "Paul Rowan <prowan@novisci.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "github:novisci/kpipe-sequence",
   "devDependencies": {
     "eslint": "^5.16.0",
