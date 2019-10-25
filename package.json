@@ -20,6 +20,5 @@
     "eslint-plugin-standard": "^4.0.0",
     "jest": "^24.9.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
