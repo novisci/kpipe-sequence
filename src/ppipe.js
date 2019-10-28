@@ -42,8 +42,8 @@ module.exports = function (...streams) {
   })
 
   // Trace events (debugging)
-  ee.on('notify', (msg) => console.debug('ppipe notify: ', msg))
-  ee.on('report', (msg) => console.debug('ppipe report: ', msg))
+  // ee.on('notify', (msg) => console.debug('ppipe notify: ', msg))
+  // ee.on('report', (msg) => console.debug('ppipe report: ', msg))
 
   // Masquerade on(), off(), and emit() methods to access the bundled event emitter
   ppipe.on = (name, listener) => ee.on(name, listener)
@@ -64,17 +64,17 @@ module.exports = function (...streams) {
         if (sizeKnown) {
           const pct = (rest.size * BigInt(20) / totalSize) * BigInt(5)
           if (pct > lastPct) {
-            process.stderr.write(`[${pct}%]`)
+            console.info(`readprogress [${pct}%]`)
             lastPct = pct
           } else {
-            process.stderr.write('.')
+            // process.stderr.write('.')
           }
         } else {
-          process.stderr.write('.')
+          // process.stderr.write('.')
         }
         break
       case 'readcomplete':
-        process.stderr.write('\n')
+        // process.stderr.write('\n')
     }
   })
 
