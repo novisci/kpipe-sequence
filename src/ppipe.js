@@ -64,7 +64,7 @@ module.exports = function (...streams) {
         if (sizeKnown) {
           const pct = (rest.size * BigInt(20) / totalSize) * BigInt(5)
           if (pct > lastPct) {
-            console.info(`readprogress [${pct}%]`)
+            console.info(`JSON {"type":"progress","percent":"${pct}"}`)
             lastPct = pct
           } else {
             // process.stderr.write('.')

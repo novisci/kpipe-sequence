@@ -1,6 +1,6 @@
 {
   "name": "kpipe-sequence",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Promise sequences and pipelines for kpipe",
   "main": "index.js",
   "scripts": {
